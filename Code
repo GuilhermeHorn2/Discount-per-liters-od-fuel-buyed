@@ -1,0 +1,24 @@
+l = int(input('liters of fuel:'))
+c = input('A-GASOLINE,G-ALCOHOL:')
+pg = l * 2.5
+pa = l * 1.9
+
+if c == 'A':
+    if l > 20:
+        pa = pa*0.05 + pa
+    elif l <= 20:
+        pa = pa*0.03 + pa
+    print('Price',round(pa,2),'Coins')
+
+if c == 'G':
+    if l > 20:
+        pg = pg*0.06 + pg
+    elif l <= 20:
+        pg = pg*0.04 + pg
+    print('Price',round(pg,2),'Coins')
+
+
+
+
+
+
